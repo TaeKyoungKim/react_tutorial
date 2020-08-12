@@ -4,11 +4,12 @@ import Wrapper from './Wrapper'
 
 import './App.css';
 
+
 function App() {
   return (
     
       <Wrapper>
-      <Hello name="김태경"  color="red" />
+      <Hello name="김태경"  color="red" isSpecial={true} />
       <Hello  color="blue" />
       </Wrapper>
   );
