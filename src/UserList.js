@@ -1,5 +1,4 @@
-// 배열 랜더링 활용
-
+// useRef를 활용한 Component안에 변수 만들기
 import React from 'react'
 
 
@@ -38,29 +37,15 @@ var User = ({user})=>{
     )
 }
 
-function UserList(){
-    const users = [
-        {
-            id:1,
-            username:"KIM",
-            email:"1@naver.com"
-        },
-        {
-            id:1,
-            username:"PARK",
-            email:"2@naver.com"
-        },
-        {
-            id:1,
-            username:"SONG",
-            email:"3@naver.com"
-        }
-    ]
+
+function UserList({users}){
+    
     return (
         <div>
-           <User user={users[0]} />
-           <User user={users[1]}/>
-           <User user={users[2]}/>
+           {users.map(user =>(
+                <User user= {user} key={user.id} />
+            ))
+           } 
         </div>
     )
 }
