@@ -1,0 +1,16 @@
+import React from 'react'
+import Hello from '../components/Hello'
+import Wrapper from '../components/Wrapper'
+
+function HelloScreen(){
+    return (
+        <>
+        <Wrapper>
+        <Hello name="김태경"  color="red" isSpecial={true} />
+        <Hello  color="blue" />
+        </Wrapper>
+        </>
+    )
+}
+
+export default HelloScreen;
