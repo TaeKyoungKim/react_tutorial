@@ -1,14 +1,14 @@
 import React from 'react'
 import HelloScreen from './screens/HelloScreen'
 import CounterScreen, {  } from './screens/CounterScreen'
-import UserScreen from './screens/UserScreen'
+import UserScreen1 from './screens/UserScreen'
 
 function App(){
     return (
         <>
         <HelloScreen />
         <CounterScreen />
-        <UserScreen />
+        <UserScreen1 />
         </>
     )
 }
