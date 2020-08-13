@@ -15,6 +15,7 @@ function InputSample(){
     const {name , nickname} = text
     const onChange=(e)=>{
         // console.log(e.target)
+        e.preventDefault()
         const {name, value} = e.target
         setText({
             ...text,
